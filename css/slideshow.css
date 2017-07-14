@@ -1,0 +1,87 @@
+.slideshow-container {
+	max-width: 95%;
+	position: relative;
+	margin: auto;
+}
+.slideshow-container img {
+	max-width: 100%;
+}
+.mySlides {
+	display: none;
+}
+#slide-indicator {
+	text-align: center;
+}
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: auto;
+	height: 458px;
+	padding: 16px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6 ease;
+	border-radius: 0 3px 3px 0; 
+}
+.prev span,
+.next span {
+	position: absolute;
+	top: 249px;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+.text {
+	color: #F2F2F2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 26px;
+	left: 40%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+}
+.numbertext {
+	color: #F2F2F2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 1.0s ease;
+}
+.active,
+.dot:hover {
+	color: red;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
